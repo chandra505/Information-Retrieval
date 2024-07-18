@@ -1,0 +1,1028 @@
+{
+    "deep": [
+        0,
+        18
+    ],
+    "learning": [
+        0,
+        3,
+        6,
+        18,
+        19,
+        23,
+        29,
+        32,
+        35
+    ],
+    "based": [
+        0,
+        11,
+        12,
+        18,
+        22,
+        30,
+        33,
+        35
+    ],
+    "forecasting": [
+        0,
+        2,
+        6
+    ],
+    "of": [
+        0,
+        1,
+        7,
+        9,
+        11,
+        13,
+        14,
+        14,
+        22,
+        24,
+        26,
+        26,
+        28,
+        29,
+        29,
+        29,
+        31,
+        31,
+        32,
+        33,
+        34,
+        34,
+        35,
+        36
+    ],
+    "covid": [
+        0
+    ],
+    "19": [
+        0
+    ],
+    "hospitalisation": [
+        0
+    ],
+    "in": [
+        0,
+        3,
+        16,
+        17,
+        20,
+        22,
+        23,
+        26,
+        37
+    ],
+    "england": [
+        0
+    ],
+    "a": [
+        0,
+        3,
+        4,
+        5,
+        5,
+        11,
+        11,
+        12,
+        22,
+        27,
+        29,
+        29,
+        31,
+        33
+    ],
+    "comparative": [
+        0
+    ],
+    "analysis": [
+        0,
+        14,
+        26,
+        27,
+        32
+    ],
+    "effective": [
+        1,
+        19,
+        21
+    ],
+    "natural": [
+        1,
+        21
+    ],
+    "language": [
+        1,
+        20,
+        21
+    ],
+    "processing": [
+        1,
+        21
+    ],
+    "algorithms": [
+        1,
+        21
+    ],
+    "for": [
+        1,
+        3,
+        4,
+        5,
+        5,
+        6,
+        10,
+        11,
+        12,
+        17,
+        18,
+        21,
+        23,
+        30
+    ],
+    "early": [
+        1,
+        21
+    ],
+    "alerts": [
+        1
+    ],
+    "gout": [
+        1,
+        21
+    ],
+    "flares": [
+        1
+    ],
+    "from": [
+        1,
+        21,
+        26
+    ],
+    "chief": [
+        1,
+        21
+    ],
+    "complaints": [
+        1,
+        21
+    ],
+    "global": [
+        2
+    ],
+    "climate": [
+        2
+    ],
+    "drivers": [
+        2
+    ],
+    "using": [
+        2,
+        9,
+        11,
+        19,
+        24,
+        33,
+        36
+    ],
+    "gaussian": [
+        2,
+        31
+    ],
+    "processes": [
+        2
+    ],
+    "and": [
+        2,
+        14,
+        15,
+        19,
+        19,
+        20,
+        27,
+        27,
+        30,
+        32
+    ],
+    "convolutional": [
+        2,
+        4,
+        30
+    ],
+    "autoencoders": [
+        2
+    ],
+    "integrating": [
+        3
+    ],
+    "machine": [
+        3,
+        6,
+        23,
+        29,
+        32,
+        33
+    ],
+    "pedestrian": [
+        3,
+        3,
+        27
+    ],
+    "forensics": [
+        3
+    ],
+    "comprehensive": [
+        3
+    ],
+    "tool": [
+        3
+    ],
+    "analysing": [
+        3
+    ],
+    "collisions": [
+        3
+    ],
+    "lightpra": [
+        4
+    ],
+    "lightweight": [
+        4
+    ],
+    "temporal": [
+        4,
+        31
+    ],
+    "network": [
+        4,
+        17
+    ],
+    "automatic": [
+        4
+    ],
+    "physical": [
+        4,
+        12
+    ],
+    "rehabilitation": [
+        4,
+        12
+    ],
+    "exercise": [
+        4
+    ],
+    "assessment": [
+        4,
+        22
+    ],
+    "locally": [
+        5
+    ],
+    "correct": [
+        5
+    ],
+    "confidence": [
+        5
+    ],
+    "intervals": [
+        5
+    ],
+    "binomial": [
+        5
+    ],
+    "proportion": [
+        5
+    ],
+    "new": [
+        5
+    ],
+    "criteria": [
+        5
+    ],
+    "an": [
+        5,
+        10
+    ],
+    "interval": [
+        5
+    ],
+    "estimator": [
+        5
+    ],
+    "approaches": [
+        6
+    ],
+    "region": [
+        6
+    ],
+    "level": [
+        6
+    ],
+    "prescription": [
+        6
+    ],
+    "demand": [
+        6
+    ],
+    "physics": [
+        7,
+        28,
+        36
+    ],
+    "informed": [
+        7,
+        28,
+        36
+    ],
+    "neural": [
+        7,
+        28,
+        36
+    ],
+    "networks": [
+        7,
+        16,
+        28,
+        30,
+        36
+    ],
+    "as": [
+        7
+    ],
+    "surrogate": [
+        7,
+        9
+    ],
+    "models": [
+        7,
+        9,
+        9
+    ],
+    "hydrodynamic": [
+        7
+    ],
+    "simulators": [
+        7
+    ],
+    "toward": [
+        8
+    ],
+    "population": [
+        8,
+        8,
+        23,
+        37
+    ],
+    "health": [
+        8,
+        8,
+        23,
+        37
+    ],
+    "intelligence": [
+        8,
+        8,
+        12
+    ],
+    "when": [
+        8
+    ],
+    "artificial": [
+        8,
+        12
+    ],
+    "meets": [
+        8
+    ],
+    "research": [
+        8
+    ],
+    "uncertainty": [
+        9
+    ],
+    "quantification": [
+        9
+    ],
+    "hydro": [
+        9,
+        24,
+        28,
+        36
+    ],
+    "morphodynamic": [
+        9,
+        24
+    ],
+    "probabilistic": [
+        9
+    ],
+    "iterated": [
+        10
+    ],
+    "greedy": [
+        10
+    ],
+    "algorithm": [
+        10,
+        11
+    ],
+    "with": [
+        10,
+        11,
+        19,
+        23
+    ],
+    "variable": [
+        10
+    ],
+    "reconstruction": [
+        10
+    ],
+    "size": [
+        10
+    ],
+    "the": [
+        10,
+        13,
+        14,
+        22,
+        23,
+        26,
+        28,
+        29,
+        29,
+        34,
+        35,
+        36
+    ],
+    "obnoxious": [
+        10
+    ],
+    "p": [
+        10
+    ],
+    "median": [
+        10
+    ],
+    "problem": [
+        10
+    ],
+    "novel": [
+        11
+    ],
+    "classification": [
+        11,
+        35
+    ],
+    "low": [
+        11
+    ],
+    "rank": [
+        11
+    ],
+    "approximation": [
+        11
+    ],
+    "kernel": [
+        11
+    ],
+    "support": [
+        11,
+        33
+    ],
+    "vector": [
+        11,
+        33
+    ],
+    "machines": [
+        11
+    ],
+    "applications": [
+        11,
+        23
+    ],
+    "skeleton": [
+        12
+    ],
+    "action": [
+        12
+    ],
+    "evaluation": [
+        12
+    ],
+    "systematic": [
+        12,
+        27
+    ],
+    "review": [
+        12,
+        27
+    ],
+    "beneath": [
+        13
+    ],
+    "bonnet": [
+        13
+    ],
+    "online": [
+        13
+    ],
+    "privacy": [
+        13
+    ],
+    "monitoring": [
+        13
+    ],
+    "gdpr": [
+        13
+    ],
+    "compliance": [
+        13
+    ],
+    "through": [
+        13
+    ],
+    "citizen": [
+        13,
+        26
+    ],
+    "science": [
+        13,
+        26
+    ],
+    "causal": [
+        14
+    ],
+    "influence": [
+        14
+    ],
+    "solar": [
+        14,
+        14
+    ],
+    "cycle": [
+        14
+    ],
+    "latitudinal": [
+        14
+    ],
+    "wind": [
+        14
+    ],
+    "structure": [
+        14
+    ],
+    "on": [
+        14,
+        25,
+        25,
+        29,
+        30,
+        34,
+        35
+    ],
+    "co": [
+        14
+    ],
+    "rotation": [
+        14
+    ],
+    "forecasts": [
+        14
+    ],
+    "core": [
+        15
+    ],
+    "manufacturing": [
+        15,
+        15
+    ],
+    "ontology": [
+        15
+    ],
+    "to": [
+        15,
+        28,
+        36
+    ],
+    "model": [
+        15,
+        22,
+        28,
+        31,
+        36
+    ],
+    "operations": [
+        15
+    ],
+    "sequencing": [
+        15
+    ],
+    "knowledge": [
+        15
+    ],
+    "correlation": [
+        16
+    ],
+    "distances": [
+        16
+    ],
+    "social": [
+        16,
+        34
+    ],
+    "data": [
+        17,
+        19,
+        32
+    ],
+    "driven": [
+        17
+    ],
+    "design": [
+        17
+    ],
+    "anomaly": [
+        17
+    ],
+    "detection": [
+        17,
+        19
+    ],
+    "access": [
+        17
+    ],
+    "control": [
+        17
+    ],
+    "systems": [
+        17
+    ],
+    "techniques": [
+        18,
+        19
+    ],
+    "radar": [
+        18
+    ],
+    "continuous": [
+        18
+    ],
+    "human": [
+        18,
+        23
+    ],
+    "activity": [
+        18
+    ],
+    "recognition": [
+        18
+    ],
+    "diabetic": [
+        19,
+        35
+    ],
+    "retinopathy": [
+        19,
+        35
+    ],
+    "transfer": [
+        19,
+        35
+    ],
+    "reinforcement": [
+        19
+    ],
+    "image": [
+        19
+    ],
+    "preprocessing": [
+        19
+    ],
+    "augmentation": [
+        19
+    ],
+    "editorial": [
+        20
+    ],
+    "women": [
+        20
+    ],
+    "computation": [
+        20
+    ],
+    "2022": [
+        20
+    ],
+    "flare": [
+        21
+    ],
+    "alert": [
+        21
+    ],
+    "efficacy": [
+        22
+    ],
+    "4f": [
+        22
+    ],
+    "feedback": [
+        22
+    ],
+    "game": [
+        22
+    ],
+    "university": [
+        22
+    ],
+    "education": [
+        22
+    ],
+    "loop": [
+        23
+    ],
+    "modelling": [
+        24
+    ],
+    "mangroves": [
+        24
+    ],
+    "imposed": [
+        24
+    ],
+    "by": [
+        24
+    ],
+    "tidal": [
+        24
+    ],
+    "waves": [
+        24
+    ],
+    "finite": [
+        24
+    ],
+    "element": [
+        24
+    ],
+    "discontinuous": [
+        24
+    ],
+    "galerkin": [
+        24
+    ],
+    "method": [
+        24
+    ],
+    "indonesian": [
+        25
+    ],
+    "2013": [
+        25
+    ],
+    "curriculum": [
+        25
+    ],
+    "ten": [
+        25
+    ],
+    "years": [
+        25
+    ],
+    "impact": [
+        25,
+        29,
+        34
+    ],
+    "mathematics": [
+        25
+    ],
+    "teaching": [
+        25
+    ],
+    "modeling": [
+        26
+    ],
+    "intrinsic": [
+        26
+    ],
+    "factors": [
+        26
+    ],
+    "inclusive": [
+        26
+    ],
+    "engagement": [
+        26
+    ],
+    "insights": [
+        26
+    ],
+    "participants": [
+        26
+    ],
+    "survey": [
+        26
+    ],
+    "csi": [
+        26
+    ],
+    "cop": [
+        26
+    ],
+    "parameters": [
+        27
+    ],
+    "influencing": [
+        27
+    ],
+    "injury": [
+        27
+    ],
+    "severity": [
+        27
+    ],
+    "meta": [
+        27
+    ],
+    "morphodynamics": [
+        28,
+        36
+    ],
+    "mangrove": [
+        28,
+        36
+    ],
+    "environments": [
+        28,
+        36
+    ],
+    "stakeholders": [
+        29
+    ],
+    "reuse": [
+        29
+    ],
+    "potential": [
+        29
+    ],
+    "structural": [
+        29
+    ],
+    "elements": [
+        29
+    ],
+    "at": [
+        29
+    ],
+    "end": [
+        29
+    ],
+    "life": [
+        29
+    ],
+    "building": [
+        29
+    ],
+    "approach": [
+        29
+    ],
+    "developing": [
+        30
+    ],
+    "graph": [
+        30
+    ],
+    "mutual": [
+        30
+    ],
+    "information": [
+        30
+    ],
+    "arrhythmic": [
+        30
+    ],
+    "diagnosis": [
+        30
+    ],
+    "multichannel": [
+        30
+    ],
+    "ecg": [
+        30
+    ],
+    "signals": [
+        30
+    ],
+    "process": [
+        31
+    ],
+    "emulation": [
+        31
+    ],
+    "spatio": [
+        31
+    ],
+    "outputs": [
+        31
+    ],
+    "2d": [
+        31
+    ],
+    "inland": [
+        31
+    ],
+    "flood": [
+        31
+    ],
+    "institutional": [
+        32
+    ],
+    "prediction": [
+        32
+    ],
+    "student": [
+        32
+    ],
+    "performance": [
+        32
+    ],
+    "predicting": [
+        33
+    ],
+    "primary": [
+        33
+    ],
+    "sequence": [
+        33
+    ],
+    "protein": [
+        33,
+        33
+    ],
+    "interactions": [
+        33
+    ],
+    "mercer": [
+        33
+    ],
+    "series": [
+        33
+    ],
+    "representation": [
+        33
+    ],
+    "nonlinear": [
+        33
+    ],
+    "explainability": [
+        34
+    ],
+    "ai": [
+        34
+    ],
+    "non": [
+        34
+    ],
+    "technical": [
+        34
+    ],
+    "explanations": [
+        34
+    ],
+    "trust": [
+        34
+    ],
+    "kaggle": [
+        35
+    ],
+    "eyepacs": [
+        35
+    ],
+    "dataset": [
+        35
+    ],
+    "quality": [
+        37
+    ],
+    "gauranteed": [
+        37
+    ],
+    "traditionally": [
+        37
+    ],
+    "sensed": [
+        37
+    ],
+    "areas": [
+        37
+    ],
+    "selection": [
+        37
+    ],
+    "compressive": [
+        37
+    ]
+}

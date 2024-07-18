@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='Coventry University-01.svg') }}" alt="Coventry University Logo">
+        </div>
+        <h1 style="text-align: center; color: #4266aa">CMDS Search Engine</h1>
+        <form class="search-form" action="/search" method="get">
+            <input type="text" name="query" placeholder="Enter search query" value="{{ query }}">
+            <input type="submit" value="Search">
+        </form>
+        {% if query %}
+        <h3>Search Results for "{{ query }}"</h3>
+        <p>Search completed in {{ "%.2f"|format(search_time * 1000) }} milliseconds.</p>
+        <ul class="search-results">
+            {% for result in results %}
+            <li>
+                <a href="{{ result.doc.url }}" target="_blank">{{ result.doc.title }}</a><br>
+                Authors:
+                {% for author, profile in zip(result.doc.authors, result.doc.authorsProfiles) %}
+                    <a href="{{ profile }}" target="_blank">{{ author }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}<br>
+                Year: {{ result.doc.year }}<br>
+                Relevance Score: {{ result.score | round(2) }}
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <h2>No search results</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
