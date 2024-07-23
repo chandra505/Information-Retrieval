@@ -154,7 +154,7 @@ class QueryProcessor:
             scores[doc_id] = similarity_score
 
         sorted_results = sorted(scores.items(), key=lambda x: x[1], reverse=True)
-        results = [{'doc': self.documents[doc_id], 'score': score} for doc_id, score in sorted_results]
+        results = [{'doc': self.documents[doc_id], 'score': score} for doc_id, score in sorted_results if score > 0.0]
 
         search_time = (time.time() - start_time) * 1000
         return results, search_time

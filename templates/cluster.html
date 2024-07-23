@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Clustering</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='clusterStyles.css') }}">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header text-center">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='Coventry University-01.svg') }}" alt="Coventry University Logo">
+
+      </div>
+    </div>
+
+    <div class="content">
+      <h1 class="text-center mb-4">Document Clustering System</h1>
+      <form id="cluster-form" action="/cluster_result" method="post" class="cluster-form">
+        <label for="document">Enter Document:</label><br>
+        <textarea id="document" name="document" rows="4" cols="50" class="form-control"></textarea><br>
+        <input type="submit" value="Cluster Document" class="btn btn-primary cluster-button">
+      </form>
+
+      <div id="cluster-result" style="display: none;">
+        <h2 class="text-center mb-3">Cluster Result</h2>
+        <div class="result-item">
+          <p><strong>Document:</strong> <span id="document-text"></span></p>
+          <p><strong>Predicted Category:</strong> <span id="cluster-name"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer text-center mt-4">
+      <p>&copy; 2024 Coventry University. All rights reserved.</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Custom Script for AJAX -->
+  <script>
+    $(document).ready(function () {
+      $('#cluster-form').submit(function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        var formData = $(this).serialize(); // Serialize form data
+        $.ajax({
+          type: 'POST',
+          url: '/cluster_result',
+          data: formData,
+          success: function (response) {
+            console.log(response);
+            // Update cluster result section with response data
+            $('#document-text').text(response.document);
+            $('#cluster-name').text(response.predicted_cluster);
+            $('#cluster-result').fadeIn(); // Show cluster result section
+          },
+          error: function (xhr, status, error) {
+            console.error('Error:', error);
+            alert('Failed to cluster document. Please try again.');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
