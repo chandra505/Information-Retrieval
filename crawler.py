@@ -10,22 +10,21 @@ from math import sqrt
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from sklearn.feature_extraction.text import TfidfVectorizer
-
+from apscheduler.schedulers.background import BackgroundScheduler
 import ssl
-ssl._create_default_https_context = ssl._create_unverified_context
+import nltk
 
+ssl._create_default_https_context = ssl._create_unverified_context
 
 app = Flask(__name__)
 
 # Download NLTK stopwords data if not already downloaded
-import nltk
 nltk.download('stopwords')
 nltk.download('punkt')
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
-
 
 # Web Crawler
 class CMDSPublicationsCrawler:
@@ -45,7 +44,12 @@ class CMDSPublicationsCrawler:
             soup = BeautifulSoup(response.content, 'html.parser')
             self.extract_publications(soup)
 
-            self.crawl(url)
+            # Find next page link and continue crawling
+            next_page_tag = soup.find('a', class_='next')
+            if next_page_tag and 'href' in next_page_tag.attrs:
+                next_page_url = next_page_tag['href']
+                time.sleep(1)  # Delay to avoid hitting the server too fast
+                self.crawl(next_page_url)
         else:
             logger.warning(f"Failed to retrieve URL: {url} with status code: {response.status_code}")
 
@@ -89,7 +93,6 @@ class CMDSPublicationsCrawler:
         with open(filename, 'w') as file:
             json.dump(self.publications, file, indent=4)
 
-
 # Inverted Index
 class InvertedIndex:
     def __init__(self):
@@ -107,7 +110,6 @@ class InvertedIndex:
     def load_from_file(self, filename='data/inverted_index.json'):
         with open(filename, 'r') as file:
             self.index = json.load(file)
-
 
 # Query Processor
 class QueryProcessor:
@@ -159,12 +161,10 @@ class QueryProcessor:
         search_time = (time.time() - start_time) * 1000
         return results, search_time
 
-
-        # Flask routes
+# Flask routes
 @app.route('/')
 def index():
     return render_template('index.html')
-
 
 @app.route('/search')
 def search():
@@ -176,16 +176,12 @@ def search():
     results, search_time = qp.search(query)
     return render_template('results.html', query=query, results=results, search_time=search_time, zip=zip)
 
-
-# Main execution
-if __name__ == '__main__':
-    # Step 1: Crawl data and save to file
+def scheduled_crawl():
     base_url = 'https://pureportal.coventry.ac.uk/en/organisations/eec-school-of-computing-mathematics-and-data-sciences-cmds/publications'
     crawler = CMDSPublicationsCrawler(base_url)
     crawler.crawl(base_url)
     crawler.save_to_file()
 
-    # Step 2: Build inverted index and save to file
     with open('data/publications.json', 'r') as file:
         documents = json.load(file)
 
@@ -193,5 +189,13 @@ if __name__ == '__main__':
     inverted_index.build_index(documents)
     inverted_index.save_to_file()
 
-    # Step 3: Run Flask app
-    app.run(debug=True)
+# Main execution
+if __name__ == '__main__':
+    scheduler = BackgroundScheduler()
+    scheduler.add_job(scheduled_crawl, 'interval', weeks=1)
+    scheduler.start()
+
+    try:
+        app.run(debug=True)
+    except (KeyboardInterrupt, SystemExit):
+        scheduler.shutdown()
